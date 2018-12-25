@@ -3,7 +3,6 @@ import Aux from '../../hoc/Aux/Aux';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import DrawerToggle from '../Navigation/SideDrawer/DrawerToggle/DrawerToggle';
 import styles from './Layout.module.css'
-import TypeWriter from '../UI/TypeWriter/TypeWriter';
 
 class Layout extends Component {
   state = {
@@ -31,7 +30,6 @@ class Layout extends Component {
           closed={this.sideDrawerClosedHandler} />
         <main className={styles.Content}>
           {this.props.children}
-          <TypeWriter>This is a test for typewriter</TypeWriter>
         </main>
       </Aux>
     )
