@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styles from './Home.module.css';
 import TypeWriter from '../../components/UI/TypeWriter/TypeWriter';
 import Cards from '../../components/Cards/Cards';
+import TextScroll from '../../components/UI/TextScroll/TextScroll';
 
 class Home extends Component {
   state = {
@@ -22,6 +23,7 @@ class Home extends Component {
         <div className={styles.Main}>
           <h1>showcase</h1>
           <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
+          <TextScroll />
         </div>
         <Cards cards={this.state.cards} />
       </div>
