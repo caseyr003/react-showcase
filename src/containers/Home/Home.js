@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import TypeWriter from '../../components/UI/TypeWriter/TypeWriter';
 import Cards from '../../components/Cards/Cards';
 import TextScroll from '../../components/UI/TextScroll/TextScroll';
+import LoadingSpinner from '../../components/UI/LoadingSpinner/LoadingSpinner';
 
 class Home extends Component {
   state = {
@@ -24,6 +25,7 @@ class Home extends Component {
           <h1>showcase</h1>
           <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
           <TextScroll />
+          <LoadingSpinner />
         </div>
         <Cards cards={this.state.cards} />
       </div>
