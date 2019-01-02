@@ -1,0 +1,51 @@
+.CodeContainer {
+  font-size: 30px;
+  font-weight: bold;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CodeText {
+  height: 100px;
+}
+
+.Selected {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 1);
+  transition: all 1s;
+  display: inline-block;
+  width: 180px;
+}
+
+.Hello {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 1);
+  display: inline-block;
+}
+
+.FadeIn {
+  font-size: 36px;
+  color: rgb(255, 255, 255, 0);
+  transition: all 1s;
+}
+
+.FadeOut {
+  font-size: 6px;
+  color: rgb(255, 255, 255, 0);
+  transition: all 1s;
+}
+
+.Bracket {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 10px;
+  display: inline-block;
+}

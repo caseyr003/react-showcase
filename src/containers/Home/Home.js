@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styles from './Home.module.css';
 import TypeWriter from '../../components/UI/TypeWriter/TypeWriter';
 import Cards from '../../components/Cards/Cards';
-import TextScroll from '../../components/UI/TextScroll/TextScroll';
+import CodeText from '../../components/UI/CodeText/CodeText';
 import LoadingSpinner from '../../components/UI/LoadingSpinner/LoadingSpinner';
 
 class Home extends Component {
@@ -24,7 +24,7 @@ class Home extends Component {
         <div className={styles.Main}>
           <h1>showcase</h1>
           <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
-          <TextScroll />
+          <CodeText words={["world!", "coders!", "everyone!"]} />
           <LoadingSpinner />
         </div>
         <Cards cards={this.state.cards} />
