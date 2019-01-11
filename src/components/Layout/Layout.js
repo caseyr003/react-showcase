@@ -28,9 +28,9 @@ class Layout extends Component {
         <SideDrawer 
           show={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler} />
-        <main className={styles.Content}>
+        <div class="container-fluid">
           {this.props.children}
-        </main>
+        </div>
       </Aux>
     )
   }

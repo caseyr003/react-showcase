@@ -19,15 +19,22 @@ class Home extends Component {
 
   render() {
     return (
-      <div className={styles.Home}>
-        <div className={styles.MainBackground}></div>
-        <div className={styles.Main}>
+      <div class="row" className={styles.Home}>
+        <div class="col-md-12">
           <h1>showcase</h1>
-          <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
-          <CodeText words={["world!", "coders!", "everyone!"]} />
-          <LoadingSpinner />
         </div>
-        <Cards cards={this.state.cards} />
+        <div class="col-md-12">
+          <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
+        </div>
+        <div class="col-md-12">
+          <CodeText words={["world!", "coders!", "everyone!"]} />
+        </div>
+        <div class="col-md-12">
+        <LoadingSpinner />
+        </div>
+        <div class="col-md-12">
+          <Cards cards={this.state.cards} />
+        </div>
       </div>
     )
   }
