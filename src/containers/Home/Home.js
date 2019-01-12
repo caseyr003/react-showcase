@@ -19,20 +19,23 @@ class Home extends Component {
 
   render() {
     return (
-      <div class="row" className={styles.Home}>
-        <div class="col-md-12">
+      <div className={"row " + styles.Home}>
+        <div className="col-md-12">
           <h1>showcase</h1>
         </div>
-        <div class="col-md-12">
+        <div className={"col-md-6 " + styles.BlueBackground}>
           <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
         </div>
-        <div class="col-md-12">
+        <div className={"col-md-6 " + styles.OrangeBackground}>
           <CodeText words={["world!", "coders!", "everyone!"]} />
         </div>
-        <div class="col-md-12">
+        <div className={"col-md-6 " + styles.PinkBackground}>
         <LoadingSpinner />
         </div>
-        <div class="col-md-12">
+        <div className={"col-md-6 " + styles.YellowBackground}>
+        <LoadingSpinner />
+        </div>
+        <div className="col-md-12">
           <Cards cards={this.state.cards} />
         </div>
       </div>
