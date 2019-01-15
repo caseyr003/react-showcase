@@ -8,27 +8,34 @@
   z-index: -1;
 }
 
+.ShowcaseBlock {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  justify-content: center;
+  height: 400px;
+}
+
 .TealBackground {
   background-color: #0D8484;
-  height: 400px;
 }
 
 .YellowBackground {
   background-color: #AB8F27;
-  height: 400px;
 }
 
 .BlueBackground {
   background-color: #26416D;
-  height: 400px;
 }
 
 .PinkBackground {
   background-color: #A6004B;
-  height: 400px;
 }
 
 .OrangeBackground {
   background-color: #B7392D;
-  height: 400px;
+}
+
+.DarkBackground {
+  background-color: #191d1f;
 }

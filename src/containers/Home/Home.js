@@ -4,6 +4,7 @@ import TypeWriter from '../../components/UI/TypeWriter/TypeWriter';
 import Cards from '../../components/Cards/Cards';
 import CodeText from '../../components/UI/CodeText/CodeText';
 import LoadingSpinner from '../../components/UI/LoadingSpinner/LoadingSpinner';
+import BoxGlow from '../../components/UI/BoxGlow/BoxGlow';
 
 class Home extends Component {
   state = {
@@ -23,17 +24,17 @@ class Home extends Component {
         <div className="col-md-12">
           <h1>showcase</h1>
         </div>
-        <div className={"col-md-6 " + styles.BlueBackground}>
+        <div className={styles.ShowcaseBlock + " col-md-6 " + styles.BlueBackground}>
           <TypeWriter>const welcome = (showcase) => showcase.projects;</TypeWriter>
         </div>
-        <div className={"col-md-6 " + styles.OrangeBackground}>
+        <div className={styles.ShowcaseBlock + " col-md-6 " + styles.OrangeBackground}>
           <CodeText words={["world!", "coders!", "everyone!"]} />
         </div>
-        <div className={"col-md-6 " + styles.PinkBackground}>
-        <LoadingSpinner />
+        <div className={styles.ShowcaseBlock + " col-md-6 " + styles.PinkBackground}>
+          <LoadingSpinner />
         </div>
-        <div className={"col-md-6 " + styles.YellowBackground}>
-        <LoadingSpinner />
+        <div className={styles.ShowcaseBlock + " col-md-6 " + styles.DarkBackground}>
+          <BoxGlow>Glowing Box</BoxGlow>
         </div>
         <div className="col-md-12">
           <Cards cards={this.state.cards} />
